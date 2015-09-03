@@ -1,17 +1,28 @@
 package runopoloy.board;
 
+import runopoly.enums.Colors;
 import runopoly.enums.SpaceType;
 
 public class Space {
+	private int spaceNumber;
 	private int numberHouses;
 	private int numberHotels;
 	private int numberPieces;
 	private SpaceType spaceType;
 	private int ownerPlayerNumber;
+	private Colors spaceColor;
 	
 	public Space()
 	{
 		this.getClass();
+	}
+	
+	public int getSpaceNumber() {
+		return spaceNumber;
+	}
+
+	public void setSpaceNumber(int spaceNumber) {
+		this.spaceNumber = spaceNumber;
 	}
 
 	public int getNumberHouses() {
@@ -52,6 +63,14 @@ public class Space {
 
 	public void setOwnerPlayerNumber(int ownerPlayerNumber) {
 		this.ownerPlayerNumber = ownerPlayerNumber;
+	}
+
+	public Colors getSpaceColor() {
+		return spaceColor;
+	}
+
+	public void setSpaceColor(Colors spaceColor) {
+		this.spaceColor = spaceColor;
 	}
 	
 
