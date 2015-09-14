@@ -9,7 +9,7 @@ public class Space {
 	private int numberHotels;
 	private int numberPieces;
 	private SpaceType spaceType;
-	private int ownerPlayerNumber;
+	private int ownerPlayerNumber = 99;
 	private Colors spaceColor;
 	
 	public Space()

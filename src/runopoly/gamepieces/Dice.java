@@ -1,7 +1,7 @@
 package runopoly.gamepieces;
 
 public class Dice {
-	private int maxValue = 0; 
+	private int maxValue = 6; 
 	
 	public Dice()
 	{
@@ -10,8 +10,8 @@ public class Dice {
 
 	public int rollDice()
 	{
-		int faceValue = 0;
-		faceValue = (int)(Math.random()*maxValue +1);
+		int faceValue;
+		faceValue = (int)(Math.random()*maxValue) +1;
 		return faceValue; 
 	}
 

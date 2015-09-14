@@ -10,9 +10,23 @@ import org.junit.Test;
 import runopoloy.board.Board;
 import runopoloy.board.Space;
 import runopoly.enums.SpaceType;
+import runopoly.gamepieces.Dice;
 
 public class TestGameSetupAspects {
 
+	@Test
+	public void testDiceValues()
+	{
+		int i;
+		for (i=0; i<=100;i++)
+		{
+			Dice dice = new Dice();
+			int value = dice.rollDice();
+			System.out.println("" +value);
+		}
+		assertFalse(false);
+	}
+	
 	@Test
 	public void testGameTokensOnGoAtGameStart() {
 		List<Player> listOfPlayers = new ArrayList<>();
@@ -30,9 +44,6 @@ public class TestGameSetupAspects {
 		}
 		assertFalse(didItFail);
 	}
-
-	//okay, I'm good now
-	//Thanks :)
 	
 	@Test
 	public void testGameFameCorrectAtGameStart() {
@@ -53,12 +64,6 @@ public class TestGameSetupAspects {
 		
 	}
 	
-	@Test
-	public void testExampleSpaceHasCorrectNumber()
-	{
-				
-		
-	}
 	
 	@Test
 	public void testBoardCreatesFortySpaces()
@@ -97,9 +102,7 @@ public class TestGameSetupAspects {
 		assertFalse(didItFail);
 	}
 	
-	
 
-	
 	
 	
 	
